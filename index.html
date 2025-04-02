@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Digital</title>
+    <link rel="shortcut icon" href="./icon.jpg" type="image/x-icon">
+
+    <style>
+
+
+    /* Adicione esta animação */
+    @keyframes vibrate {
+        0%, 100% {
+            transform: translate(-50%, 50%) scale(1);
+        }
+        50% {
+            transform: translate(-50%, 50%) scale(1.05);
+        }
+    }
+   
+
+   
+    
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('./lotomais.png'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .card {
+        position: absolute;
+        bottom: 12%;
+        left: 47%;
+        transform: translate(-50%, 50%);
+        text-align: center;
+        animation: vibrate 0.3s infinite;
+    }
+
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 50px; /* Rounded button */
+            font-weight: bold;
+            color: white;
+            font-size: 1.7rem;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 40px;
+        }
+
+        .card a:hover {
+            background-color: #1EBE57; /* Darker WhatsApp green */
+            transform: scale(1.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a img {
+            width: 40px;
+            height: 36px;
+        }
+
+        @media (max-width: 768px) {
+            .card a {
+                padding: 25px 30px;
+                font-size: 1.5rem;
+            }
+        }
+        @media (max-width: 400px) {
+            .card a {
+                padding: 25px 10px;
+                font-size: 1.3rem;
+                
+            }
+        }
+    </style>
+    <!-- Meta Pixel Code -->
+   <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3029956980504008');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3029956980504008&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+   
+</head>
+<body>
+    <div class="card">
+        <a href="https://wa.me/554791144904?text=Vim%20do%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es!" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+            Fale Conosco
+        </a>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
